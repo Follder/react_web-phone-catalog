@@ -1,0 +1,153 @@
+@import '../../styles/colors';
+
+.arrowLeft * {
+  fill: var(--primary);
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--btn-width);
+  height: var(--btn-height);
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+
+  &__primary {
+    width: 100%;
+    min-height: 40px;
+    background-color: var(--button-background);
+    color: $White;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 13px 0 var(--button-shadow);
+      background-color: var(--button-hover);
+    }
+
+    &--selected {
+      border: 1px solid var(--elements);
+      background-color: var(--button-selected);
+      color: var(--button-selected-text-color);
+
+      &:hover {
+        background-color: var(--button-selected);
+      }
+    }
+  }
+
+  &__back {
+    width: auto;
+    font-size: 12px;
+    background-color: var(--background);
+    color: var(--back-button-color);
+
+    &:hover {
+      color: var(--back-button-hover-color);
+    }
+
+    &:hover svg * {
+      fill: var(--back-button-hover-color);
+    }
+  }
+  &__sign,
+  &__number,
+  &__icon {
+    aspect-ratio: 1 / 1;
+    background-color: var(--icon-background-color);
+    border: 1px solid;
+  }
+
+  &__number {
+    border-color: var(--border);
+    color: var(--primary);
+
+    background-color: var(--icon-numbers-color);
+
+    &:hover {
+      border-color: var(--icon-numbers-hover-border);
+      background-color: var(--icon-numbers-hover-color);
+    }
+
+    &--selected {
+      background-color: var(--icon-numbers-selected);
+      color: $White;
+
+      &:hover {
+        background-color: var(--icon-numbers-selected);
+      }
+    }
+  }
+
+  &__sign {
+    border-color: var(--elements);
+    background-color: var(--card-background);
+
+    &:hover {
+      border-color: var(--icon-border-color);
+      background-color: var(--hover);
+    }
+  }
+
+  &__icon {
+    border-color: var(--icon-border-color);
+
+    &:hover {
+      border-color: var(--icon-border-hover-color);
+      background-color: var(--icon-hover-color);
+    }
+
+    &--selected {
+      border-color: var(--icon-selected-border-color);
+    }
+
+    &--header {
+      background-color: var(--background);
+    }
+
+    &--disabled {
+      opacity: 0.3;
+    }
+  }
+
+  &__radio {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    background-color: $Elements;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid $White;
+      background-color: var(--radio-color);
+    }
+
+    &:not(.btn__radio--selected):hover {
+      background-color: $Icons;
+
+      &::before {
+        background-color: var(--radio-hover-color);
+      }
+    }
+
+    &--selected {
+      background-color: $Primary;
+    }
+  }
+}
+
+.arrowLeft {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+

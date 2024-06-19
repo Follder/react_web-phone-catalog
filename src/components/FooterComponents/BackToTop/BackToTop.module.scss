@@ -1,0 +1,46 @@
+@import '../../../styles/colors';
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  &__fill * {
+    fill: var(--primary);
+  }
+  &__link {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--secondary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    transition: 0.3s color;
+    &:hover {
+      color: var(--primary);
+
+      button {
+        color: var(--primary);
+        border-color: var(--primary);
+      }
+    }
+  }
+  &__icon {
+    display: flex;
+    padding: 8px;
+    border: 1px solid $Icons;
+
+    transition: 0.3s border-color;
+    &:hover {
+      border-color: $Primary;
+    }
+    &__img {
+      width: 16px;
+      object-fit: contain;
+    }
+  }
+}

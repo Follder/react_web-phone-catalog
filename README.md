@@ -2,7 +2,7 @@
 
 ## Demo
 
-For Demo this project you can use [DEMO LINK](https://follder.github.io/Todo_application//)
+For Demo this project you can use [DEMO LINK](https://fs-mar-24-team-5.github.io/react_phone-catalog/#)
 
 ## Project timeline
 
@@ -19,11 +19,23 @@ This educational project was created during the completion of a Frontend Develop
 - Typescript, JavaScript (ES6)
 - React
 - HTML5
-- CSS3
+- CSS3, CSS modules
 - SCSS
 - Fetch, REST API
+- Redux toolkit
 - Git
 - Github
+
+## Team
+
+Made by [HACKERMEN](https://github.com/fs-mar-24-team-5) team
+
+Members:
+[Vladislav Ivanov](https://github.com/sevenlays) - Team lead
+[Dmytro Koriahin](https://github.com/follder) - full-stack developer
+[Orest Burmei](https://github.com/ordila) - full-stack developer
+[Yuriy Marchuk](https://github.com/MarchAlbion) - full-stack developer
+[Oleksii Dunchyk](https://github.com/odunchyk) - full-stack developer
 
 ## Contacts
 
